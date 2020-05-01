@@ -11,23 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class FormTest {
-    private WebDriver driver;
-
-    @BeforeAll
-    static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "/Users/olgaalexandrova/Downloads/chromedriver");
-    }
-
-    @BeforeEach
-    void setUp() {
-        driver = new ChromeDriver();
-    }
-
-    @AfterEach
-    void tearDown() {
-        driver.quit();
-        driver = null;
-    }
 
     @Test
     void ifFormIsCorrectShouldReturnSuccess() {
